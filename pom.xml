@@ -112,7 +112,7 @@
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>imagej-ops</artifactId>
-			<version>0.33.0</version>
+			<version>0.34.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.scijava</groupId>
@@ -130,6 +130,10 @@
 		<dependency>
 			<groupId>net.imglib2</groupId>
 			<artifactId>imglib2-ij</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
 		</dependency>
 	</dependencies>
 
