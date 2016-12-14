@@ -17,6 +17,8 @@ install:
 script:
 - mvn initialize
 - mvn compile
+- wget https://raw.githubusercontent.com/scijava/scijava-scripts/master/melting-pot.sh
+- sh melting-pot.sh sc.fiji:ThreeDViewer:0.0.1-SNAPSHOT -r http://maven.imagej.net/content/groups/public,http://maven.imagej.net/content/repositories/snapshots -v -f -d -b master
 after_success:
 - chmod a+x threedviewer_deploy.sh
 - bash threedviewer_deploy.sh
