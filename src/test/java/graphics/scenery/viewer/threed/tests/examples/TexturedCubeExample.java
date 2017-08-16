@@ -41,7 +41,8 @@ public class TexturedCubeExample {
             URL resource=TexturedCubeJavaApplication.class.getResource("textures/helix.png");
             String pathToResource=null;
             if (resource==null) {
-            	System.out.println("Could not find resource");
+            	System.out.println("Could not find resource > Hacky work around to get the file direclty");
+            	
             	pathToResource="E:\\Dropbox\\NicoWork\\sciView\\SciView\\src\\test\\resources\\graphics\\scenery\\viewer\\threed\\tests\\examples\\textures\\spiral.png";
             } else {
             	pathToResource=resource.getFile();

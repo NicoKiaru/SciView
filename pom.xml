@@ -134,6 +134,11 @@
 		<repository>
 			<id>ossrh</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</repository>		
+		<repository>
+			<id>bintray-clearvolume-ClearVolume</id>
+			<name>bintray</name>
+			<url>https://dl.bintray.com/clearvolume/ClearVolume</url>
 		</repository>
 	</repositories>
 	<dependencies>
