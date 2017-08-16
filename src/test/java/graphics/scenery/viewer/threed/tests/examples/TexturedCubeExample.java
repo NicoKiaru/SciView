@@ -3,6 +3,9 @@ package graphics.scenery.viewer.threed.tests.examples;
 import cleargl.GLVector;
 import graphics.scenery.*;
 import graphics.scenery.backends.Renderer;
+
+import java.net.URL;
+
 import org.junit.Test;
 
 
@@ -32,7 +35,18 @@ public class TexturedCubeExample {
             boxmaterial.setAmbient( new GLVector(1.0f, 0.0f, 0.0f) );
             boxmaterial.setDiffuse( new GLVector(0.0f, 1.0f, 0.0f) );
             boxmaterial.setSpecular( new GLVector(1.0f, 1.0f, 1.0f) );
-            boxmaterial.getTextures().put("diffuse", TexturedCubeJavaApplication.class.getResource("textures/helix.png").getFile() );
+            // ---- Cannot get the resource!
+            //boxmaterial.getTextures().put("diffuse", TexturedCubeJavaApplication.class.getResource("textures/helix.png").getFile() );
+            
+            URL resource=TexturedCubeJavaApplication.class.getResource("textures/helix.png");
+            String pathToResource=null;
+            if (resource==null) {
+            	System.out.println("Could not find resource");
+            	pathToResource="E:\\Dropbox\\NicoWork\\sciView\\SciView\\src\\test\\resources\\graphics\\scenery\\viewer\\threed\\tests\\examples\\textures\\spiral.png";
+            } else {
+            	pathToResource=resource.getFile();
+            }
+            boxmaterial.getTextures().put("diffuse",  pathToResource);
 
             final Box box = new Box(new GLVector(1.0f, 1.0f, 1.0f), false);
             box.setMaterial( boxmaterial );
