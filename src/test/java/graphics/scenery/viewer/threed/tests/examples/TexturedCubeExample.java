@@ -27,7 +27,7 @@ public class TexturedCubeExample {
         }
 
         public void init() {
-
+        	System.out.println(System.getProperty("java.version"));
             setRenderer( Renderer.createRenderer(getHub(), getApplicationName(), getScene(), 512, 512));
             getHub().add(SceneryElement.Renderer, getRenderer());
 

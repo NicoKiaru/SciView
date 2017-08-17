@@ -238,6 +238,12 @@
 			<groupId>graphics.scenery</groupId>
 			<artifactId>scenery</artifactId>
 			<version>0.1.1-SNAPSHOT</version>
+		</dependency>		
+		<!-- https://mvnrepository.com/artifact/graphics.scenery/spirvcrossj -->
+		<dependency>
+    		<groupId>graphics.scenery</groupId>
+    		<artifactId>spirvcrossj</artifactId>
+    		<version>0.3.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 	
