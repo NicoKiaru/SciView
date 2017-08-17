@@ -45,6 +45,8 @@ public class TexturedCubeExample {
             	
             	pathToResource="E:\\Dropbox\\NicoWork\\sciView\\SciView\\src\\test\\resources\\graphics\\scenery\\viewer\\threed\\tests\\examples\\textures\\spiral.png";
             } else {
+            	
+            	System.out.println("Resource found!");
             	pathToResource=resource.getFile();
             }
             boxmaterial.getTextures().put("diffuse",  pathToResource);
